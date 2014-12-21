@@ -8,16 +8,16 @@ module BaseHangul
     #
     # Examples
     #
-    #   chunks('foo', 1)
-    #   # => ['f', 'o', 'o']
+    #   chunks("foo", 1)
+    #   # => ["f", "o", "o"]
     #
-    #   chunks('foobarbaz', 3)
-    #   # => ['foo', 'bar', 'baz']
+    #   chunks("foobarbaz", 3)
+    #   # => ["foo", "bar", "baz"]
     #
-    #   chunks('abcd1234AB', 4)
-    #   # => ['abcd', '1234', 'AB']
+    #   chunks("abcd1234AB", 4)
+    #   # => ["abcd", "1234", "AB"]
     #
-    #   chunks('', 1)
+    #   chunks("", 1)
     #   # => []
     #
     # Returns an Array of Slice of chunked Strings.
