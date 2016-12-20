@@ -2,9 +2,9 @@ require "../spec_helper"
 
 describe BaseHangul::Version do
   it "each version is a Number" do
-    BaseHangul::Version::MAJOR.should be_a(Number)
-    BaseHangul::Version::MINOR.should be_a(Number)
-    BaseHangul::Version::PATCH.should be_a(Number)
+    BaseHangul::Version::MAJOR.should be_a(Int32)
+    BaseHangul::Version::MINOR.should be_a(Int32)
+    BaseHangul::Version::PATCH.should be_a(Int32)
   end
 
   describe ".to_s" do

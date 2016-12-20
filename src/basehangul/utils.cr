@@ -26,7 +26,7 @@ module BaseHangul
       raise ArgumentError.new("Invalid slice size") if size <= 0
       new_str = str.clone
       array = [] of String
-      (0...str.length).step(size) do |index|
+      (0...str.size).step(size) do |index|
         array << str[index...index + size]
       end
       array
