@@ -1,6 +1,16 @@
 module BaseHangul
   # Helper methods for BaseHangul.
   module Utils
+    # Format String bytes to binary form. If the length of each binary string is
+    # smaller than 8, it pads '0' at the left to make its length to 8.
+    #
+    # str - A String to convert.
+    #
+    # Returns a binary form String which of the length is multiple of 8.
+    def self.to_bin(str)
+      str.bytes.map { |byte| "%08s" % byte.to_s(2) }.join
+    end
+
     # Slice a string into chunks of a given size.
     #
     # str  - The String to slice.
