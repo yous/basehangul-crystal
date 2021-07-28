@@ -226,7 +226,7 @@ module BaseHangul
       last = chunks.last
       case last.size
       when 2       then chunks[-1] = "1" + last.rjust(10, '0')
-      when 4, 6, 8 then padding = PADDING.to_s * (last.size / 2 - 1)
+      when 4, 6, 8 then padding = PADDING.to_s * (last.size // 2 - 1)
       end
     end
     chunks.map { |b| to_hangul(b.ljust(10, '0').to_i(2)) }.join + padding
