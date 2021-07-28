@@ -34,7 +34,6 @@ module BaseHangul
     # Raises ArgumentError if the size is smaller than or equal to 0.
     def self.chunks(str, size)
       raise ArgumentError.new("Invalid slice size") if size <= 0
-      new_str = str.clone
       array = [] of String
       (0...str.size).step(size) do |index|
         array << str[index...index + size]

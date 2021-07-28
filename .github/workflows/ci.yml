@@ -13,3 +13,4 @@ jobs:
       - uses: crystal-lang/install-crystal@v1
       - run: shards install
       - run: crystal spec
+      - run: bin/ameba

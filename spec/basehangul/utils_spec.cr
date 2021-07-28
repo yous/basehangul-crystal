@@ -77,7 +77,7 @@ describe BaseHangul::Utils do
       it "returns an array of chunks" do
         [
           {"foo", 1, ["f", "o", "o"]},
-          {"foobarbaz", 3, ["foo", "bar", "baz"]}
+          {"foobarbaz", 3, ["foo", "bar", "baz"]},
         ].each do |example|
           str, size, expected = example
           chunks = BaseHangul::Utils.chunks(str, size)
@@ -91,7 +91,7 @@ describe BaseHangul::Utils do
         [
           {"abcd1234A", 4, ["abcd", "1234", "A"]},
           {"abcd1234AB", 4, ["abcd", "1234", "AB"]},
-          {"abcd1234ABC", 4, ["abcd", "1234", "ABC"]}
+          {"abcd1234ABC", 4, ["abcd", "1234", "ABC"]},
         ].each do |example|
           str, size, expected = example
           chunks = BaseHangul::Utils.chunks(str, size)
