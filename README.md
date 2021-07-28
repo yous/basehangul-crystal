@@ -1,6 +1,6 @@
 # BaseHangul
 
-[![Build Status](https://travis-ci.org/yous/basehangul-crystal.svg?branch=master)](https://travis-ci.org/yous/basehangul-crystal)
+[![CI](https://github.com/yous/basehangul-crystal/actions/workflows/ci.yml/badge.svg)](https://github.com/yous/basehangul-crystal/actions/workflows/ci.yml)
 
 Human-readable binary encoding, [BaseHangul](https://basehangul.github.io) for [Crystal](http://crystal-lang.org).
 
