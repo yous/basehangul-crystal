@@ -1,0 +1,9 @@
+name: basehangul
+version: 0.0.1
+
+authors:
+  - Chayoung You <yousbe@gmail.com>
+
+crystal: ">= 0.31.0"
+
+license: MIT
